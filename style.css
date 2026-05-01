@@ -1,0 +1,105 @@
+/* CSS ADVANCED GRIDS*/
+
+body {
+  background-color: rgb(184, 179, 179);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  border: 2px solid rgb(174, 163, 163);
+  gap: 20px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: rgb(210, 206, 206);
+}
+
+.gridbox {
+  display: grid;
+  padding: 2%;
+  margin-top: 2px;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.top-container {
+  display: flex;
+  margin-left: 5%;
+  margin-top: 10px;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 2px;
+}
+
+.top-text h2,
+.top-text p {
+  margin: 0;
+}
+
+.feedback {
+  margin-left: 5%;
+  max-height: 80%;
+  max-width: 90%;
+  padding: 10px;
+  word-break: break-word;
+}
+
+/*-----Image-----*/
+.profile-img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/*---- GRID BOXES -----*/
+.dan-box {
+  grid-column: 1 / 6;
+  grid-row: 1 / 12;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(263, 55%, 52%);
+}
+
+.john-box {
+  grid-column: 6 / 9;
+  grid-row: 1 / 12;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 19%, 35%);
+}
+
+.kira-box {
+  grid-column: 9 / 15;
+  grid-row: 1 / 30;
+  background-color: hsl(214, 17%, 92%);
+  color: hsl(0, 0%, 7%);
+}
+
+.jeanette-box {
+  grid-column: 1 / 4;
+  grid-row: 12 / 30;
+  background-color: hsl(214, 17%, 92%);
+  color: hsl(0, 0%, 7%);
+}
+
+.patrick-box {
+  grid-column: 4 / 9;
+  grid-row: 12 / 30;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 29%, 14%);
+}
