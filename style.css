@@ -1,8 +1,10 @@
 /* CSS ADVANCED GRIDS*/
 
+ 
 body {
   background-color: rgb(184, 179, 179);
   padding: 20px;
+  width: 1400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,4 +104,15 @@ section {
   grid-row: 12 / 30;
   color: hsl(0, 0%, 100%);
   background-color: hsl(219, 29%, 14%);
+}
+
+
+
+/*------IMAGE STYLES------*/
+.patrick-img {
+  border: 3px solid purple
+}
+
+.daniel-img {
+  border: 3px solid hsl(263, 100%, 67%);
 }
